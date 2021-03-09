@@ -3,10 +3,10 @@ from voting.systems import plurality, majoritarian, procon, ranked
 import pprint
 
 preferences = random_preferences.get_random_preferences(
-        1000, 
+        10000, 
         ['Lula', 'Bolso', 'Ciro', 'Marina', 'Amoedo'],
-        [30, 30, 5, 5, 1],
-        [30, 30, 0.5, 0.5, 4]
+        [100, 100, 5, 5, 1],
+        [2, 2, 0.5, 0.5, 4]
     )
 # pprint.pprint(preferences)
 
