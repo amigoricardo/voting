@@ -24,6 +24,6 @@ def get_random_preferences(n_electors, candidates_names, candidates_notabilities
             prefs.append([cand, random.choice(['+', '-'])])
         positive_prefs = [c[0] for c in prefs if c[1]=='+']
         negative_prefs = [c[0] for c in prefs if c[1]=='-']
-        elector_preferences = positive_prefs + list(reversed(negative_prefs))
-        preferences.append(elector_preferences)
+        full_preferences = positive_prefs + list(reversed(negative_prefs))
+        preferences.append(full_preferences)
     return preferences
